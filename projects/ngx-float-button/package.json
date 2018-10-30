@@ -1,0 +1,28 @@
+{
+  "name": "ngx-float-button",
+  "description": "Google Material Float Button - Implementation for Angular v7+",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Hallyson Almeida <hallysonh@gmail.com>",
+  "contributors": [
+    "Gustavo Costa - @GustavoCostaW"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hallysonh/ngx-float-button"
+  },
+  "keywords": [
+    "angular",
+    "float",
+    "button",
+    "component"
+  ],
+  "homepage": "https://github.com/hallysonh/ngx-float-button#readme",
+  "peerDependencies": {
+    "@angular/common": "^7.0.0",
+    "@angular/core": "^7.0.0",
+    "@angular/material": "^7.0.0",
+    "@angular/cdk": "^7.0.0",
+    "rxjs": "^6.3.3"
+  }
+}

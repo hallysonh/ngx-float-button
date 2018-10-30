@@ -1,0 +1,27 @@
+<a class="mb" href="https://github.com/hallysonh/ngx-float-button" target="_blank">https://github.com/hallysonh/ngx-float-button</a>
+
+<p class="mb">check your console.log</p>
+
+<div class="mb">
+  <button md-button (click)="direction='top'">Top</button>
+  <button md-button (click)="direction='right'">Right</button>
+  <button md-button (click)="direction='bottom'">Bottom</button>
+  <button md-button (click)="direction='left'">Left</button>
+</div>
+
+<div class="mb">
+  <button md-button (click)="open.next(true)">Open</button>
+  <button md-button (click)="open.next(false)">Close</button>
+</div>
+
+<div class="mb">
+  <button md-button (click)="color='#ccc'">#ccc</button>
+  <button md-button (click)="color='red'">red</button>
+  <button md-button (click)="color='black'">black</button>
+</div>
+
+<ngx-float-button icon="add" (events)="output($event)" [open]="open" direction="{{direction}}" color="{{color}}">
+  <ngx-float-item-button icon="person_add" content="float item 1"></ngx-float-item-button>
+  <ngx-float-item-button icon="gps_fixed" content="float item 2"></ngx-float-item-button>
+  <ngx-float-item-button icon="mode_edit" content="float item 3"></ngx-float-item-button>
+</ngx-float-button>
