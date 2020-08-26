@@ -143,7 +143,9 @@ export class NgxFloatButtonComponent implements AfterContentInit, OnDestroy, OnC
       }
 
       this.buttons.toArray().forEach(element => {
-        element.contentref.nativeElement.style.display = display;
+        if (element.contentref != null) {
+          element.contentref.nativeElement.style.display = display;
+        }
       });
     }
   }
@@ -151,6 +153,9 @@ export class NgxFloatButtonComponent implements AfterContentInit, OnDestroy, OnC
   // transition
   private animateButtons(eventType) {
     this.buttons.toArray().forEach((btn, i) => {
+      if (btn.elementref == null) {
+        return;
+      }
       i += 1;
       const style = btn.elementref.nativeElement.style;
 

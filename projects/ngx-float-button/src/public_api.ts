@@ -4,4 +4,5 @@
 
 export * from './lib/ngx-float-button.service';
 export * from './lib/ngx-float-button.component';
+export * from './lib/ngx-float-item-button.component';
 export * from './lib/ngx-float-button.module';
